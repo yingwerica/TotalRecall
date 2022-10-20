@@ -160,35 +160,39 @@ Add a new element, "Cloud City" to the array
 
 
 
-E. Mix It Up
-Note: You don't really need .splice()for these. You could use it, but there are simpler array methods that are more appropriate.
+### E. Mix It Up
 
-Given the following array: const myArray = [5, 10, 500, 20]
+Note: You don't really need `.splice()` for these. You could use it, but there are simpler array methods that are more appropriate.
 
-Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.
-Remove the 5from the beginning of the array.
-Add the string "Bob Marley"to the beginning of the array.
-Remove the string of your choice from the end of the array.
-Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
+Given the following array: `const myArray = [5, 10, 500, 20]`
+
+- Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.
+- Remove the 5from the beginning of the array.
+- Add the string "Bob Marley"to the beginning of the array.
+- Remove the string of your choice from the end of the array.
+- Reverse this array using `Array.prototype.reverse()`. 
+- Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
 
 
 
-F. Biggie Smalls
+### F. Biggie Smalls
+
 Create a variable that contains an integer.
 
-Write an if ... elsestatement that:
+Write an `if ... else` statement that:
 
-console.log()s "little number" if the number is entered is less than 100
-console.log()s big numberif the number is greater than or equal to 100.
+- `console.log()s` "little number" if the number is entered is less than 100
+- `console.log()s` "big number" if the number is greater than or equal to 100.
 
 
 
-G. Monkey in the Middle
-Write an if ... else if ... elsestatement:
+### G. Monkey in the Middle
 
-console.log()little numberif the number entered is less than 5.
-If the number entered is more than 10, log big number.
-Otherwise, log "monkey".
+Write an `if ... else if ... else` statement:
+
+1. console.log()little numberif the number entered is less than 5.
+2. If the number entered is more than 10, log big number.
+3. Otherwise, log "monkey".
 
 
 
