@@ -329,7 +329,7 @@ Write a function `getMultipleLengthsthat` accepts a single parameter as an argum
 
 
 
-G. maxOfThree
+### G. maxOfThree
 Define a function maxOfThreethat takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
 
 console.log(maxOfThree(6, 9, 1));
@@ -340,7 +340,7 @@ Did you use Google and find Math.max()? If so, great job! Very resourceful—kee
 
 
 
-H. printLongestWord
+### H. printLongestWord
 Write a function printLongestWordthat accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
 
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
@@ -349,32 +349,32 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 
 
 
-Objects
+## Objects
 Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
 
 
 
 
-A. Make a user object
+### A. Make a user object
 Create an object called user.
 Write in to the object the key-value pairs for name, email, age, and purchased. Set the value of purchasedto an empty array []. Set the other values to whatever you would like.
 
 
 
-B. Update the user
+### B. Update the user
 Our user has changed his or her email address. Without changing the original userobject, update the emailvalue to a new email address.
 Our user has had a birthday! Without changing the original userobject, increment the agevalue using the postfix operator. Hint: age++
 
 
 
-C. Adding keys and values
+### C. Adding keys and values
 You have decided to add your user's location to the data that you want to collect.
 
 Without changing the original userobject, add a new key locationto the object, and give it a value or some-or-other location (a string).
 
 
 
-D. Shopaholic!
+### D. Shopaholic!
 Our user has purchased an item! They have purchased some "carbohydrates". Using .push(), add the string "carbohydrates" to the purchasedarray.
 Our user has purchased an item! They have purchased some "peace of mind". Using .push(), add the string "peace of mind" to the purchasedarray.
 Our user has purchased an item! They have purchased some "Merino jodhpurs". Using .push(), add the string "Merino jodhpurs" to the purchasedarray.
@@ -382,7 +382,7 @@ Console.log just the "Merino jodhpurs" from the purchasedarray.
 
 
 
-E. Object-within-object
+### E. Object-within-object
 Remember that you can add an object to an existing object in the same way that you can add any new property/value pair.
 
 If we want to give our user a friendwith a nameand age, we could write:
@@ -403,13 +403,13 @@ Console.log just "A latte" from the friend's purchasedarray.
 
 
 
-F. Loops
+### F. Loops
 Write a for loop that iterates over the User's purchasedarray (NOT the friend's purchased array), and prints each element to the console.
 Write a for loop that iterates over the Friend's purchasedarray, and prints each element to the console.
 
 
 
-G. Functions can operate on objects
+### G. Functions can operate on objects
 Write a single function updateUserthat takes no parameters. When the function is run, it should:
 it should increment the user's age by 1
 make the user's name uppercase
@@ -422,16 +422,17 @@ Write a function oldAndLoudthat performs the exact same tasks as updateUser, but
 
 
 
-Requirements Complete! Hungry for More?
+# Requirements Complete! Hungry for More?
 
 
 
-Cat Combinator
+## Cat Combinator
 
 
 
 1. Mama cat
-Define an object called cat1that contains the following properties:
+
+Define an object called `cat1that` contains the following properties:
 
 name
 breed
@@ -442,6 +443,7 @@ console.log the cat's breed
 
 
 2. Papa cat
+
 Define an object called cat2that also contains the properties:
 
 name
@@ -451,11 +453,13 @@ age (a number)
 
 
 3. Combine Cats!
+
 The cats are multiplying!
 
-Write a function combineCatsthat has two parameters mama, and papa. The function will take two arguments -- each a cat object.
+Write a function `combineCats` that has two parameters `mama`, and `papa`. The function will take two arguments -- each a cat object.
 
 Pass cat1and cat2as arguments to the combineCatsfunction. The function should console.log them.
+
 Example:
 
 combineCats(cat1, cat2)
