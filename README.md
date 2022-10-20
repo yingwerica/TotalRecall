@@ -241,7 +241,7 @@ const thomsCloset = [
 ];
 ```
 
-What's Kristyn wearing today? 
+**What's Kristyn wearing today?**
 
 1. Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
 
@@ -251,7 +251,7 @@ Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"
 
 3. Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirts array.
 
-In the same way, access one item from Thom's pants array.
+**In the same way, access one item from Thom's pants array.**
 
 - Access one item from Thom's accessories array.
 - Log a sentence about what Thom's wearing. 
@@ -264,60 +264,67 @@ In the same way, access one item from Thom's pants array.
 ## IV. Functions
 
 
-A. printGreeting
-Do you think you could write a function called printGreetingwith a parameter namethat returns a greeting with the argument interpolated into the greeting?
+### A. printGreeting
+
+Do you think you could write a function called `printGreetingwith` a parameter name that returns a greeting with the argument interpolated into the greeting?
 
 Like so?
 
-console.log(printGreeting("Slimer"));
-=> Hello there, Slimer!
+``console.log(printGreeting("Slimer")); `
+`=> Hello there, Slimer!``
 
 You think you could? I think so too. Feel free to skip this problem, because you've already done it. If you've done the problem twice, read entire problems carefully before doing them from now on.
 
 
+### B. printCool
+
+Write a function `printCoolthat` accepts one parameter, `name`, as an argument. The function should print the name and a message saying that that person is cool.
+
+`console.log(printCool("Captain Reynolds"));`
+`=> "Captain Reynolds is cool";`
 
 
-B. printCool
-Write a function printCoolthat accepts one parameter, nameas an argument. The function should print the name and a message saying that that person is cool.
-
-console.log(printCool("Captain Reynolds"));
-=> "Captain Reynolds is cool";
 
 
-
-
-C. calculateCube
+### C. calculateCube
 Write a function calculateCubethat takes a single number and prints the volume of a cube made from that number.
 
-console.log(calculateCube(5));
-=> 125
+`console.log(calculateCube(5));`
+`=> 125`
 
 
 
 
-D. isVowel
-Write a function isVowelthat takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
+## D. isVowel
 
-console.log(isVowel("a"));
-=> true
+1. Write a function `isVoweltha`t takes a character (i.e. a string of length 1) and returns `true` if it is a vowel, `false` otherwise. 
 
+2. The vowel could be upper or lower case. 
 
+Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
 
-
-E. getTwoLengths
-Write a function getTwoLengthsthat accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
-
-console.log(getTwoLengths("Hank", "Hippopopalous"));
-=> [4, 13]
+`console.log(isVowel("a"));`
+`=> true`
 
 
 
 
-F. getMultipleLengths
-Write a function getMultipleLengthsthat accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+### E. getTwoLengths
 
-console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
-=> [5, 4, 2, 2, 4]
+Write a function `getTwoLengthsthat` accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+
+`console.log(getTwoLengths("Hank", "Hippopopalous"));`
+`=> [4, 13]`
+
+
+
+
+### F. getMultipleLengths
+
+Write a function `getMultipleLengthsthat` accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+
+`console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));`
+`=> [5, 4, 2, 2, 4]`
 
 
 
