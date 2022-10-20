@@ -196,9 +196,10 @@ Write an `if ... else if ... else` statement:
 
 
 
-H. What's in Your Closet?
+### H. What's in Your Closet?
 Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
 
+```
 const kristynsCloset = [
   "left shoe",
   "cowboy boots",
@@ -208,6 +209,14 @@ const kristynsCloset = [
   "yellow knit hat",
   "marshmallow peeps"
 ];
+```
+
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+
 
 // Thom's closet is more complicated. Check out this nested data structure!!
 const thomsCloset = [
@@ -229,6 +238,8 @@ const thomsCloset = [
     "raybans"
   ]
 ];
+
+
 What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
 Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
 Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
