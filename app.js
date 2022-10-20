@@ -193,4 +193,17 @@ const kristynsCloset = [
     ]
   ];
 
+  console.log(`Kristyn is rocking that ${kristynsCloset[2]} today!`);
+  kristynsCloset.splice(6, 0, 'raybans');
+  kristynsCloset[5] = "stained knit hat";
+  thomsCloset[0][0];
+  thomsCloset[1][2];
+  thomsCloset[2][1];
+  console.log(`Thom is looking fierce in a ${thomsCloset[0][2]}, ${thomsCloset[1][0]} and ${thomsCloset[2][2]}!`);
+  thomsCloset[1][2] = 'Footie Pajamas';
+  console.log(thomsCloset);
+  
+
+
+
 
