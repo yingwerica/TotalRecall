@@ -299,18 +299,71 @@ const printLongestWord = (stringArray) => {
     return maxLengthWord;
 
 };
-console.log(printLongestWord(['elsa', 'emma', 'eva', 'longest', 'great','copycat']));
+console.log(printLongestWord(['elsa', 'emma', 'eva', 'longest', 'great','copycat'])); 
+
+
 
 ////////////////////////////////////
 //Objects//////////////////////////
 
 //Make a user object
 const user = {
-    name : "Ying",
+    name : "ying",
     email : "aaa@gmail.com",
     age : 38,
     purchased : []
 };
+//Update the user
+user.email = "bbb@gmail.com";
+user.age++;
+console.log(user);
+//Adding keys and values
+user.location = 'Broomfield';
+console.log(user);
+
+//Shopaholic!
+user.purchased.push("carbohydrates");
+user.purchased.push("peace of mind");
+user.purchased.push("Merino jodhpurs");
+console.log(user);
+console.log(user.purchased[2]);
+
+//Object-within-object
+user.friend = {
+    name : "Zen",
+    age : 38,
+    location : "Thornton",
+    purchased : []
+};
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55;
+user.friend.purchased.push("The One Ring");
+user.friend.purchased.push( "A latte");
+console.log(user);
+console.log(user.friend.purchased[1]);
+
+//Loops
+for (let i = 0; i < user.purchased.length; i++ ) {
+    console.log(user.purchased[i]);
+}
+for (let i = 0; i < user.friend.purchased.length; i++ ) {
+    console.log(user.friend.purchased[i]);
+}
+
+//Functions can operate on objects
+const updateUser =() => {
+    user.age++;
+    user.name.toUpperCase();
+};
+const oldAndLoud = (person) => {
+    person.age++;
+    person.name = person.name.toUpperCase();
+    return person;
+};
+console.log(oldAndLoud(user));
+
+
 
 
 
