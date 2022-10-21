@@ -301,6 +301,16 @@ const printLongestWord = (stringArray) => {
 };
 console.log(printLongestWord(['elsa', 'emma', 'eva', 'longest', 'great','copycat']));
 
+////////////////////////////////////
+//Objects//////////////////////////
+
+//Make a user object
+const user = {
+    name : "Ying",
+    email : "aaa@gmail.com",
+    age : 38,
+    purchased : []
+};
 
 
 
