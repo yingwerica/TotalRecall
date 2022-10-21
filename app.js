@@ -202,7 +202,104 @@ const kristynsCloset = [
   console.log(`Thom is looking fierce in a ${thomsCloset[0][2]}, ${thomsCloset[1][0]} and ${thomsCloset[2][2]}!`);
   thomsCloset[1][2] = 'Footie Pajamas';
   console.log(thomsCloset);
-  
+
+
+
+  //Functions
+  //printGreeting
+  function printGreeting(name) {
+    console.log(`Hello, my name is ${name}.`);
+  };
+  printGreeting('Ying');
+
+  //printCool
+  function printCool(name) {
+    console.log(`${name} is cool!`);
+  };
+  printCool('Ying');
+
+//calculateCube
+function calculateCube(sideLength) {
+    //console.log(`The volume of this cube is ${sideLength*sideLength*sideLength}.`);
+    console.log(`The volume of this cube is ${Math.pow(sideLength, 3)}.`);
+}
+calculateCube(5);
+
+//isVowel
+function isVowel(character) {
+   switch (character.toLowerCase()) {
+    case "a":
+        console.log(true)
+        break;
+    case "e":
+        console.log(true)
+        break;
+    case "i":
+        console.log(true)
+        break;
+    case "o":
+        console.log(true)
+        break;
+    case "u":
+        console.log(true)
+        break;     
+   
+    default:
+        console.log(false)
+        break;
+   }
+}
+isVowel('H');
+
+//getTwoLengths
+const getTwoLengths = (string1, string2) => {
+    const stringLength = [string1.length, string2.length];
+    return stringLength;
+}
+console.log(getTwoLengths('name', 'age'));
+
+//getMultipleLengths
+const getMultipleLengths = (array) => {
+    let lengthArray = [];
+    for (let i = 0; i < array.length; i++) {
+       lengthArray.push(array[i].length); 
+    }
+    return lengthArray;
+};
+console.log(getMultipleLengths(['amy', 'scholas', 'blablabla', 'hello world']));
+
+//maxOfThree
+const numArray = new Array(3);
+const maxOfThree = (numArray) => {
+    // return num1 >= num2 && num1 >= num3? num1
+    //     : num1 >= num2 && num1 < num3? num3
+    //     : num1 < num2 && num1 >= num3? num2
+    //     : num1 < num2 && num1 < num3 && num2 >= num3 ? num2
+    //     : num3;
+    let max = numArray[0];
+    for (let i = 0; i < numArray.length; i++){
+        if (numArray[i] >= max) {
+            max = numArray[i];
+        }
+    }
+    return max;
+}
+console.log(maxOfThree([5,9,5])); 
+
+//printLongestWord
+const printLongestWord = (stringArray) => {
+    let maxLength = stringArray[0].length;
+    let maxLengthWord = stringArray[0];
+    for ( let i = 0; i < stringArray.length; i++) {
+        if ( stringArray[i].length > maxLength) {
+            maxLength = stringArray[i].length;
+            maxLengthWord = stringArray[i];
+        }
+    };
+    return maxLengthWord;
+
+};
+console.log(printLongestWord(['elsa', 'emma', 'eva', 'longest', 'great','copycat']));
 
 
 
