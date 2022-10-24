@@ -47,11 +47,17 @@ console.log(48 !=='48');
 
 //the Farm
 let animal = "cow";
-let isCow = animal == "cow" ? 'mooooo' : "Hey! You're not a cow.";
-console.log(isCow);
-animal = 'dog';
-isCow = animal == "cow" ? 'mooooo' : "Hey! You're not a cow.";
-console.log(isCow);
+// let isCow = animal == "cow" ? 'mooooo' : "Hey! You're not a cow.";
+// console.log(isCow);
+// animal = 'dog';
+// isCow = animal == "cow" ? 'mooooo' : "Hey! You're not a cow.";
+// console.log(isCow);
+animal = "dog";
+const findCow = function(animal) {
+    return animal.toLowerCase() ==="cow" ? "mooooo" : "Hey! You're not a cow.";
+};
+console.log(findCow(animal));  //function + ternary way
+
 
 //Driver's Ed
 let age = 15;
@@ -59,15 +65,15 @@ age >= 16 ? console.log("Here are the keys!") : console.log("Sorry, you're too y
 
 //LOOPS
 //The Basics
-for (let i = 0; i <= 10; i++) {
-    console.log(i); 
-};
-for (let i = 10; i <= 400; i++) {
-    console.log(i); 
-};
-for (let i = 12; i <= 4000; i+=3) {
-    console.log(i); 
-};
+// for (let i = 0; i <= 10; i++) {
+//     console.log(i); 
+// };
+// for (let i = 10; i <= 400; i++) {
+//     console.log(i); 
+// };
+// for (let i = 12; i <= 4000; i+=3) {
+//     console.log(i); 
+// };
 
 //Get Even
 for (let i = 1; i <= 100; i++) {
@@ -80,12 +86,14 @@ for (let i = 1; i <= 100; i++) {
 
 //Give Me 5
 for (let i = 0; i <= 100; i++) {
-     if (i % 5 == 0 && i % 3 !== 0 && i !== 0 ) {
+     if (i % 3 == 0 && i % 5 == 0 ) {
+        console.log(`I found a ${i}. Three is a crowd.I found a ${i}. High five! `);
+     } else if (i % 5 == 0 ) {
          console.log(`I found a ${i}. High five!`);
-     } else if (i % 3 == 0 && i % 5 !== 0 && i !== 0) {
+     } else if (i % 3 == 0 ) {
          console.log(`I found a ${i}. Three is a crowd`);
-     } else if (i % 3 == 0 && i % 5 == 0 && i !== 0) {
-         console.log(`I found a ${i}. Three is a crowd.I found a ${i}. High five! `);
+     }else {
+        console.log(i);
      }
 };
 
