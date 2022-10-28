@@ -99,10 +99,14 @@ for (let i = 0; i <= 100; i++) {
 
 //Savings Account
 let bank_account = 0;
-for (let i = 1; i <= 100; i++) {
+const doubleYourMoney = () => {
+    for (let i = 1; i <= 100; i++) {
    bank_account += i*2;
-}
+};
 console.log(bank_account);
+}
+doubleYourMoney(); // use function way
+
 
 
 //ARRAYS & CONTROL FLOW
@@ -127,7 +131,7 @@ console.log(randomThings);
 //Change values
 const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
 ourClass[2];
-ourClass[4] = "Octocat";
+ourClass[ourClass.length-1] = "Octocat";
 ourClass.push('Cloud City') ;
 console.log(ourClass);
 
@@ -148,11 +152,14 @@ console.log(myArray);
 //Biggie Smalls
 let int = 9;
 //int < 100 ? console.log('little number') : console.log('big number');
-if ( int < 100) {
+const findBigOrLittleNumber= (num) =>{
+    if ( num < 100) {
     console.log('little number');
 } else {
     console.log('big number');
 }
+};
+findBigOrLittleNumber(int);
 
 //Monkey in the Middle
 /*int < 5 ? console.log('little number') 
@@ -261,8 +268,7 @@ isVowel('H');
 
 //getTwoLengths
 const getTwoLengths = (string1, string2) => {
-    const stringLength = [string1.length, string2.length];
-    return stringLength;
+    return [string1.length, string2.length];   
 }
 console.log(getTwoLengths('name', 'age'));
 
@@ -279,11 +285,7 @@ console.log(getMultipleLengths(['amy', 'scholas', 'blablabla', 'hello world']));
 //maxOfThree
 const numArray = new Array(3);
 const maxOfThree = (numArray) => {
-    // return num1 >= num2 && num1 >= num3? num1
-    //     : num1 >= num2 && num1 < num3? num3
-    //     : num1 < num2 && num1 >= num3? num2
-    //     : num1 < num2 && num1 < num3 && num2 >= num3 ? num2
-    //     : num3;
+   
     let max = numArray[0];
     for (let i = 0; i < numArray.length; i++){
         if (numArray[i] >= max) {
@@ -293,6 +295,14 @@ const maxOfThree = (numArray) => {
     return max;
 }
 console.log(maxOfThree([5,9,5])); 
+
+// function maxOfThree(...arg){
+//     //sort the biggest number to the end of the array
+//    arg.sort((a,b) => { return a - b});
+//    return arg[arg.length-1]; // return the bigest number
+// }
+// console.log(maxOfThree(19, 11, 17));
+
 
 //printLongestWord
 const printLongestWord = (stringArray) => {
@@ -308,6 +318,8 @@ const printLongestWord = (stringArray) => {
 
 };
 console.log(printLongestWord(['elsa', 'emma', 'eva', 'longest', 'great','copycat'])); 
+
+//use forEach
 
 
 
@@ -355,26 +367,28 @@ console.log(user.friend.purchased[1]);
 for (let i = 0; i < user.purchased.length; i++ ) {
     console.log(user.purchased[i]);
 }
+//use forEach
+
+
 for (let i = 0; i < user.friend.purchased.length; i++ ) {
     console.log(user.friend.purchased[i]);
 }
+//use forEach
+
+
 
 //Functions can operate on objects
 const updateUser =() => {
     user.age++;
     user.name = user.name.toUpperCase();
+    console.log(user);
 };
 updateUser();
-console.log(user);
 
 const oldAndLoud = (person) => {
     person.age++;
     person.name = person.name.toUpperCase();
+    console.log(person);
 };
 oldAndLoud(user);
-console.log(user);
-
-
-
-
 
